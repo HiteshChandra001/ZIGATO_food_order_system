@@ -11,10 +11,13 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.stripe.exception.StripeException;
 import com.zigato.model.Orders;
 import com.zigato.model.User;
 import com.zigato.request.OrderReq;
+import com.zigato.response.PaymentResponse;
 import com.zigato.service.OrderService;
+import com.zigato.service.PaymentService;
 import com.zigato.service.UserService;
 
 @RestController
@@ -26,15 +29,19 @@ public class OrderController {
 	@Autowired
 	private UserService userService;
 
+	@Autowired
+	private PaymentService paymentService;
+
 	@PostMapping("/order")
-	public ResponseEntity<Orders> createOrder(@RequestBody OrderReq req, @RequestHeader("Authorization") String jwt) {
+	public ResponseEntity<PaymentResponse> createOrder(@RequestBody OrderReq req,
+			@RequestHeader("Authorization") String jwt) throws StripeException {
 
 		User user = userService.findUserByJwtToken(jwt);
 		Orders order = orderService.createOrder(req, user);
-
-		return ResponseEntity.ok(order);
+		PaymentResponse res = paymentService.createPaymentLink(order);
+		return ResponseEntity.ok(res);
 	}
-	
+
 	@GetMapping("/order/user")
 	public ResponseEntity<List<Orders>> getOrderHistory(@RequestHeader("Authorization") String jwt) {
 

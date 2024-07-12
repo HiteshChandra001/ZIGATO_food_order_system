@@ -46,7 +46,7 @@ public class CategoryController {
 	}
 
 	@GetMapping("/category/{id}")
-	public ResponseEntity<Category> createCateg(@PathVariable int id, @RequestHeader("Authorization") String jwt) {
+	public ResponseEntity<Category> getCateg(@PathVariable int id, @RequestHeader("Authorization") String jwt) {
 		Category categ = categoryService.findCategById(id);
 		return ResponseEntity.ok(categ);
 	}

@@ -19,9 +19,7 @@ import com.zigato.service.FoodService;
 public class FoodController {
 	@Autowired
 	private FoodService foodService;
-
-	@Autowired
-
+	
 	@GetMapping("/search")
 	public ResponseEntity<List<Food>> searchFood(@RequestParam String name,
 			@RequestHeader("Authorization") String jwt) {

@@ -26,13 +26,14 @@ public class AppConfig {
 
 		http.sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
 				.authorizeHttpRequests(auth -> auth
-						.requestMatchers("/api/admin/**").hasAnyRole("ADMIN", "REST_OWNER")
-						.requestMatchers("/api/**").authenticated()
-						.anyRequest().permitAll())
+
+						.requestMatchers("/api/admin/**").hasAnyRole("ADMIN", "REST_OWNER").requestMatchers("/api/**")
+						.authenticated().anyRequest().permitAll())
+
 				.addFilterBefore(new JwtTokenValidator(), BasicAuthenticationFilter.class)
-				.csrf(c -> c.disable())
-				.cors(c -> c.configurationSource(corsConfigurationSource()));
-		
+
+				.csrf(c -> c.disable()).cors(c -> c.configurationSource(corsConfigurationSource()));
+
 		return http.build();
 	}
 
@@ -42,7 +43,7 @@ public class AppConfig {
 			@Override
 			public CorsConfiguration getCorsConfiguration(HttpServletRequest request) {
 				CorsConfiguration cfg = new CorsConfiguration();
-				cfg.setAllowedOrigins(Arrays.asList("*"));
+				cfg.setAllowedOriginPatterns(Collections.singletonList("*"));
 				cfg.setAllowedMethods(Collections.singletonList("*"));
 				cfg.setAllowCredentials(true);
 				cfg.setAllowedHeaders(Collections.singletonList("*"));
