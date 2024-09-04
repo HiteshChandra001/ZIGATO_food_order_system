@@ -10,7 +10,7 @@ ZIGATO_food_order_system is a comprehensive solution for managing food orders in
 - **API Documentation**: Swagger
 - **Logging**: SLF4J
 - **Monitoring**: Spring Boot Actuator
-- 
+  
 ## Features
 
 ### Authentication
