@@ -36,12 +36,11 @@ public class CategoryController {
 		return ResponseEntity.ok(categ);
 	}  
 
-	@GetMapping("/category/restaurent")
-	public ResponseEntity<List<Category>> getRestCategs(@RequestHeader("Authorization") String jwt) {
-
+	@GetMapping("/category/restaurent/{id}")
+	public ResponseEntity<List<Category>> getRestCategs(@PathVariable int id,@RequestHeader("Authorization") String jwt) {
 		User user = userService.findUserByJwtToken(jwt);
 
-		List<Category> list = categoryService.findCategByUserId(user.getId());
+		List<Category> list = categoryService.findCategByRestId(id);
 		return ResponseEntity.ok(list);
 	}
 

@@ -1,0 +1,391 @@
+2024-09-03T22:28:01.381+05:30  INFO 15788 --- [zigato] [restartedMain] com.zigato.ZigatoApplication             : Starting ZigatoApplication using Java 17.0.6 with PID 15788 (D:\full_stack_project\ZIGATO_food_order_system\zigato\target\classes started by Hitesh Chandra in D:\full_stack_project\ZIGATO_food_order_system\zigato)
+2024-09-03T22:28:01.386+05:30  INFO 15788 --- [zigato] [restartedMain] com.zigato.ZigatoApplication             : No active profile set, falling back to 1 default profile: "default"
+2024-09-03T22:28:01.466+05:30  INFO 15788 --- [zigato] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-03T22:28:01.467+05:30  INFO 15788 --- [zigato] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-03T22:28:02.351+05:30  INFO 15788 --- [zigato] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-03T22:28:02.426+05:30  INFO 15788 --- [zigato] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 11 JPA repository interfaces.
+2024-09-03T22:28:03.145+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-03T22:28:03.158+05:30  INFO 15788 --- [zigato] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-03T22:28:03.158+05:30  INFO 15788 --- [zigato] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-09-03T22:28:03.226+05:30  INFO 15788 --- [zigato] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-03T22:28:03.226+05:30  INFO 15788 --- [zigato] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1757 ms
+2024-09-03T22:28:03.548+05:30  INFO 15788 --- [zigato] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-03T22:28:03.591+05:30  INFO 15788 --- [zigato] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-03T22:28:03.620+05:30  INFO 15788 --- [zigato] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-03T22:28:03.848+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-03T22:28:03.872+05:30  INFO 15788 --- [zigato] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-03T22:28:04.225+05:30  INFO 15788 --- [zigato] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57846b44
+2024-09-03T22:28:04.226+05:30  INFO 15788 --- [zigato] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-03T22:28:05.245+05:30  INFO 15788 --- [zigato] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-03T22:28:05.534+05:30  INFO 15788 --- [zigato] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-03T22:28:05.908+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-03T22:28:06.985+05:30  WARN 15788 --- [zigato] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-03T22:28:07.030+05:30  INFO 15788 --- [zigato] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-09-03T22:28:07.583+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2024-09-03T22:28:07.674+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a143d3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79676dca, org.springframework.security.web.context.SecurityContextHolderFilter@62baad22, org.springframework.security.web.header.HeaderWriterFilter@2af96ba4, org.springframework.web.filter.CorsFilter@1f91613e, org.springframework.security.web.authentication.logout.LogoutFilter@19af0b3e, com.zigato.config.JwtTokenValidator@454cfa49, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4baa60f1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f384925, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4cfa96e8, org.springframework.security.web.session.SessionManagementFilter@530ec2a4, org.springframework.security.web.access.ExceptionTranslationFilter@6537fd75, org.springframework.security.web.access.intercept.AuthorizationFilter@811f997]
+2024-09-03T22:28:08.319+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-03T22:28:08.409+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-03T22:28:08.430+05:30  INFO 15788 --- [zigato] [restartedMain] com.zigato.ZigatoApplication             : Started ZigatoApplication in 7.358 seconds (process running for 7.967)
+2024-09-03T22:28:10.124+05:30  INFO 15788 --- [zigato] [RMI TCP Connection(5)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-03T22:28:10.124+05:30  INFO 15788 --- [zigato] [RMI TCP Connection(5)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-03T22:28:10.127+05:30  INFO 15788 --- [zigato] [RMI TCP Connection(5)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-09-03T22:29:10.410+05:30  INFO 15788 --- [zigato] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-03T22:29:10.435+05:30  INFO 15788 --- [zigato] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-03T22:29:10.438+05:30  INFO 15788 --- [zigato] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-03T22:29:10.447+05:30  INFO 15788 --- [zigato] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-03T22:29:10.534+05:30  INFO 15788 --- [zigato] [restartedMain] com.zigato.ZigatoApplication             : Starting ZigatoApplication using Java 17.0.6 with PID 15788 (D:\full_stack_project\ZIGATO_food_order_system\zigato\target\classes started by Hitesh Chandra in D:\full_stack_project\ZIGATO_food_order_system\zigato)
+2024-09-03T22:29:10.535+05:30  INFO 15788 --- [zigato] [restartedMain] com.zigato.ZigatoApplication             : No active profile set, falling back to 1 default profile: "default"
+2024-09-03T22:29:10.803+05:30  INFO 15788 --- [zigato] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-03T22:29:10.826+05:30  INFO 15788 --- [zigato] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 11 JPA repository interfaces.
+2024-09-03T22:29:10.992+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-03T22:29:10.993+05:30  INFO 15788 --- [zigato] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-03T22:29:10.993+05:30  INFO 15788 --- [zigato] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-09-03T22:29:11.017+05:30  INFO 15788 --- [zigato] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-03T22:29:11.018+05:30  INFO 15788 --- [zigato] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 481 ms
+2024-09-03T22:29:11.146+05:30  INFO 15788 --- [zigato] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-03T22:29:11.148+05:30  INFO 15788 --- [zigato] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-03T22:29:11.155+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-03T22:29:11.156+05:30  INFO 15788 --- [zigato] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-09-03T22:29:11.167+05:30  INFO 15788 --- [zigato] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@600009c2
+2024-09-03T22:29:11.168+05:30  INFO 15788 --- [zigato] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-09-03T22:29:11.312+05:30  INFO 15788 --- [zigato] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-03T22:29:11.443+05:30  INFO 15788 --- [zigato] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-03T22:29:12.251+05:30  WARN 15788 --- [zigato] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-03T22:29:12.278+05:30  INFO 15788 --- [zigato] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-09-03T22:29:12.557+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2024-09-03T22:29:12.615+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@47e1a6e7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@fc6db21, org.springframework.security.web.context.SecurityContextHolderFilter@6c0682ef, org.springframework.security.web.header.HeaderWriterFilter@5b6cda, org.springframework.web.filter.CorsFilter@6d9897d7, org.springframework.security.web.authentication.logout.LogoutFilter@1e6b34a6, com.zigato.config.JwtTokenValidator@64a2f287, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1792ecf1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d58afda, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ebeb66a, org.springframework.security.web.session.SessionManagementFilter@5fcae079, org.springframework.security.web.access.ExceptionTranslationFilter@4ce50de, org.springframework.security.web.access.intercept.AuthorizationFilter@3c3e8a30]
+2024-09-03T22:29:12.973+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-03T22:29:12.994+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-03T22:29:13.003+05:30  INFO 15788 --- [zigato] [restartedMain] com.zigato.ZigatoApplication             : Started ZigatoApplication in 2.491 seconds (process running for 72.541)
+2024-09-03T22:29:13.006+05:30  INFO 15788 --- [zigato] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-03T22:29:23.592+05:30  INFO 15788 --- [zigato] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-03T22:29:23.599+05:30  INFO 15788 --- [zigato] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-03T22:29:23.600+05:30  INFO 15788 --- [zigato] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-09-03T22:29:23.605+05:30  INFO 15788 --- [zigato] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-09-03T22:29:23.678+05:30  INFO 15788 --- [zigato] [restartedMain] com.zigato.ZigatoApplication             : Starting ZigatoApplication using Java 17.0.6 with PID 15788 (D:\full_stack_project\ZIGATO_food_order_system\zigato\target\classes started by Hitesh Chandra in D:\full_stack_project\ZIGATO_food_order_system\zigato)
+2024-09-03T22:29:23.679+05:30  INFO 15788 --- [zigato] [restartedMain] com.zigato.ZigatoApplication             : No active profile set, falling back to 1 default profile: "default"
+2024-09-03T22:29:23.904+05:30  INFO 15788 --- [zigato] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-03T22:29:23.924+05:30  INFO 15788 --- [zigato] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 11 JPA repository interfaces.
+2024-09-03T22:29:24.077+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-03T22:29:24.077+05:30  INFO 15788 --- [zigato] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-03T22:29:24.077+05:30  INFO 15788 --- [zigato] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-09-03T22:29:24.090+05:30  INFO 15788 --- [zigato] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-03T22:29:24.091+05:30  INFO 15788 --- [zigato] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 410 ms
+2024-09-03T22:29:24.219+05:30  INFO 15788 --- [zigato] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-03T22:29:24.223+05:30  INFO 15788 --- [zigato] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-03T22:29:24.228+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-03T22:29:24.230+05:30  INFO 15788 --- [zigato] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-09-03T22:29:24.249+05:30  INFO 15788 --- [zigato] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3459c422
+2024-09-03T22:29:24.249+05:30  INFO 15788 --- [zigato] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-09-03T22:29:24.365+05:30  INFO 15788 --- [zigato] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-03T22:29:24.485+05:30  INFO 15788 --- [zigato] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-03T22:29:25.265+05:30  WARN 15788 --- [zigato] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-03T22:29:25.290+05:30  INFO 15788 --- [zigato] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-09-03T22:29:25.574+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2024-09-03T22:29:25.623+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6edcb21f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@10ed0a59, org.springframework.security.web.context.SecurityContextHolderFilter@11383049, org.springframework.security.web.header.HeaderWriterFilter@745e7b21, org.springframework.web.filter.CorsFilter@198a132d, org.springframework.security.web.authentication.logout.LogoutFilter@1764ee91, com.zigato.config.JwtTokenValidator@5cafe5ec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3982699, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58780a74, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5768f82c, org.springframework.security.web.session.SessionManagementFilter@4beaac45, org.springframework.security.web.access.ExceptionTranslationFilter@2b4fadd, org.springframework.security.web.access.intercept.AuthorizationFilter@185cc267]
+2024-09-03T22:29:25.978+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-03T22:29:26.000+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-03T22:29:26.009+05:30  INFO 15788 --- [zigato] [restartedMain] com.zigato.ZigatoApplication             : Started ZigatoApplication in 2.346 seconds (process running for 85.547)
+2024-09-03T22:29:26.012+05:30  INFO 15788 --- [zigato] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-03T22:34:57.429+05:30  WARN 15788 --- [zigato] [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=3m3s51ms666µs100ns).
+2024-09-03T22:35:12.168+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-03T22:35:12.169+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-03T22:35:12.171+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-03T22:35:13.553+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 740 ms
+2024-09-03T22:36:04.675+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-3] com.zigato.service.AOPLoggingAspect      : Method UserDetails com.zigato.service.CustomUserDetailsService.loadUserByUsername(String) returned: org.springframework.security.core.userdetails.User [Username=hitesh@gmail.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_CUSTOMER]]
+2024-09-03T22:36:04.675+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-3] com.zigato.service.AOPLoggingAspect      : Method UserDetails com.zigato.service.CustomUserDetailsService.loadUserByUsername(String) executed in 400 ms
+2024-09-03T22:36:59.213+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-6] com.zigato.service.AOPLoggingAspect      : Method User com.zigato.service.UserServiceImpl.findUserByJwtToken(String) returned: User(id=1, fullName=hitesh chandra, email=hitesh@gmail.com, password=$2a$10$o5r8Ekhrt7/UNdKe8.SItOnqky6YFHF5mE6XTt7kvAPRoMbrFboHC, role=ROLE_CUSTOMER, orders=[], favorites=[], adresses=[])
+2024-09-03T22:36:59.287+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-6] com.zigato.service.AOPLoggingAspect      : Method User com.zigato.service.UserServiceImpl.findUserByJwtToken(String) executed in 87 ms
+2024-09-03T22:37:17.184+05:30  WARN 15788 --- [zigato] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'Authorization' for method parameter type String is not present]
+2024-09-03T22:37:38.251+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-10] com.zigato.service.AOPLoggingAspect      : Method User com.zigato.service.UserServiceImpl.findUserByJwtToken(String) returned: User(id=1, fullName=hitesh chandra, email=hitesh@gmail.com, password=$2a$10$o5r8Ekhrt7/UNdKe8.SItOnqky6YFHF5mE6XTt7kvAPRoMbrFboHC, role=ROLE_CUSTOMER, orders=[], favorites=[], adresses=[])
+2024-09-03T22:37:38.261+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-10] com.zigato.service.AOPLoggingAspect      : Method User com.zigato.service.UserServiceImpl.findUserByJwtToken(String) executed in 19 ms
+2024-09-03T22:39:42.227+05:30  INFO 15788 --- [zigato] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-03T22:39:42.249+05:30  INFO 15788 --- [zigato] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-03T22:39:42.251+05:30  INFO 15788 --- [zigato] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-09-03T22:39:42.276+05:30  INFO 15788 --- [zigato] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-09-03T22:39:42.438+05:30  INFO 15788 --- [zigato] [restartedMain] com.zigato.ZigatoApplication             : Starting ZigatoApplication using Java 17.0.6 with PID 15788 (D:\full_stack_project\ZIGATO_food_order_system\zigato\target\classes started by Hitesh Chandra in D:\full_stack_project\ZIGATO_food_order_system\zigato)
+2024-09-03T22:39:42.439+05:30  INFO 15788 --- [zigato] [restartedMain] com.zigato.ZigatoApplication             : No active profile set, falling back to 1 default profile: "default"
+2024-09-03T22:39:42.844+05:30  INFO 15788 --- [zigato] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-03T22:39:42.866+05:30  INFO 15788 --- [zigato] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 11 JPA repository interfaces.
+2024-09-03T22:39:43.094+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-03T22:39:43.095+05:30  INFO 15788 --- [zigato] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-03T22:39:43.095+05:30  INFO 15788 --- [zigato] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-09-03T22:39:43.124+05:30  INFO 15788 --- [zigato] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-03T22:39:43.125+05:30  INFO 15788 --- [zigato] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 681 ms
+2024-09-03T22:39:43.303+05:30  INFO 15788 --- [zigato] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-03T22:39:43.306+05:30  INFO 15788 --- [zigato] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-03T22:39:43.313+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-03T22:39:43.316+05:30  INFO 15788 --- [zigato] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-09-03T22:39:43.347+05:30  INFO 15788 --- [zigato] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@568df3d0
+2024-09-03T22:39:43.347+05:30  INFO 15788 --- [zigato] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-09-03T22:39:43.527+05:30  INFO 15788 --- [zigato] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-03T22:39:43.729+05:30  INFO 15788 --- [zigato] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-03T22:39:45.898+05:30  WARN 15788 --- [zigato] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-03T22:39:46.012+05:30  INFO 15788 --- [zigato] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-09-03T22:39:47.422+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2024-09-03T22:39:47.728+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2de9b77, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@766f0b1c, org.springframework.security.web.context.SecurityContextHolderFilter@34e3aad4, org.springframework.security.web.header.HeaderWriterFilter@cd2d2dc, org.springframework.web.filter.CorsFilter@640266a9, org.springframework.security.web.authentication.logout.LogoutFilter@4117dc8e, com.zigato.config.JwtTokenValidator@2b2e4255, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d72b1e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ca9f6ff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d5d7164, org.springframework.security.web.session.SessionManagementFilter@4372793, org.springframework.security.web.access.ExceptionTranslationFilter@2af5d718, org.springframework.security.web.access.intercept.AuthorizationFilter@3aeed75]
+2024-09-03T22:39:49.894+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-03T22:39:49.994+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-03T22:39:50.060+05:30  INFO 15788 --- [zigato] [restartedMain] com.zigato.ZigatoApplication             : Started ZigatoApplication in 7.65 seconds (process running for 709.598)
+2024-09-03T22:39:50.071+05:30  INFO 15788 --- [zigato] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-03T22:40:00.109+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-03T22:40:00.109+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-03T22:40:00.116+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2024-09-03T22:40:01.607+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 953 ms
+2024-09-03T22:41:28.235+05:30  INFO 15788 --- [zigato] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-03T22:41:28.247+05:30  INFO 15788 --- [zigato] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-03T22:41:28.248+05:30  INFO 15788 --- [zigato] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-09-03T22:41:28.254+05:30  INFO 15788 --- [zigato] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-09-03T22:41:28.372+05:30  INFO 15788 --- [zigato] [restartedMain] com.zigato.ZigatoApplication             : Starting ZigatoApplication using Java 17.0.6 with PID 15788 (D:\full_stack_project\ZIGATO_food_order_system\zigato\target\classes started by Hitesh Chandra in D:\full_stack_project\ZIGATO_food_order_system\zigato)
+2024-09-03T22:41:28.372+05:30  INFO 15788 --- [zigato] [restartedMain] com.zigato.ZigatoApplication             : No active profile set, falling back to 1 default profile: "default"
+2024-09-03T22:41:28.771+05:30  INFO 15788 --- [zigato] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-03T22:41:28.799+05:30  INFO 15788 --- [zigato] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 11 JPA repository interfaces.
+2024-09-03T22:41:29.034+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-03T22:41:29.035+05:30  INFO 15788 --- [zigato] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-03T22:41:29.035+05:30  INFO 15788 --- [zigato] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-09-03T22:41:29.068+05:30  INFO 15788 --- [zigato] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-03T22:41:29.068+05:30  INFO 15788 --- [zigato] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 694 ms
+2024-09-03T22:41:29.286+05:30  INFO 15788 --- [zigato] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-03T22:41:29.288+05:30  INFO 15788 --- [zigato] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-03T22:41:29.295+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-03T22:41:29.296+05:30  INFO 15788 --- [zigato] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-09-03T22:41:29.308+05:30  INFO 15788 --- [zigato] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@59afc472
+2024-09-03T22:41:29.308+05:30  INFO 15788 --- [zigato] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-09-03T22:41:29.490+05:30  INFO 15788 --- [zigato] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-03T22:41:29.672+05:30  INFO 15788 --- [zigato] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-03T22:41:30.751+05:30  WARN 15788 --- [zigato] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-03T22:41:30.794+05:30  INFO 15788 --- [zigato] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-09-03T22:41:31.185+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2024-09-03T22:41:31.282+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@40000499, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@57bfc998, org.springframework.security.web.context.SecurityContextHolderFilter@67ea4d11, org.springframework.security.web.header.HeaderWriterFilter@26ee16cc, org.springframework.web.filter.CorsFilter@67c549a7, org.springframework.security.web.authentication.logout.LogoutFilter@7b013140, com.zigato.config.JwtTokenValidator@7833eb1f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a4144cf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@187dd2fd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38571c4c, org.springframework.security.web.session.SessionManagementFilter@3a83695, org.springframework.security.web.access.ExceptionTranslationFilter@28df9266, org.springframework.security.web.access.intercept.AuthorizationFilter@fc30d6c]
+2024-09-03T22:41:31.803+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-03T22:41:31.832+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-03T22:41:31.847+05:30  INFO 15788 --- [zigato] [restartedMain] com.zigato.ZigatoApplication             : Started ZigatoApplication in 3.502 seconds (process running for 811.384)
+2024-09-03T22:41:31.849+05:30  INFO 15788 --- [zigato] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-03T22:41:35.264+05:30  INFO 15788 --- [zigato] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-03T22:41:35.286+05:30  INFO 15788 --- [zigato] [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-03T22:41:35.287+05:30  INFO 15788 --- [zigato] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-09-03T22:41:35.306+05:30  INFO 15788 --- [zigato] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2024-09-03T22:41:35.447+05:30  INFO 15788 --- [zigato] [restartedMain] com.zigato.ZigatoApplication             : Starting ZigatoApplication using Java 17.0.6 with PID 15788 (D:\full_stack_project\ZIGATO_food_order_system\zigato\target\classes started by Hitesh Chandra in D:\full_stack_project\ZIGATO_food_order_system\zigato)
+2024-09-03T22:41:35.447+05:30  INFO 15788 --- [zigato] [restartedMain] com.zigato.ZigatoApplication             : No active profile set, falling back to 1 default profile: "default"
+2024-09-03T22:41:35.770+05:30  INFO 15788 --- [zigato] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-03T22:41:35.796+05:30  INFO 15788 --- [zigato] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 11 JPA repository interfaces.
+2024-09-03T22:41:36.003+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-03T22:41:36.004+05:30  INFO 15788 --- [zigato] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-03T22:41:36.004+05:30  INFO 15788 --- [zigato] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-09-03T22:41:36.036+05:30  INFO 15788 --- [zigato] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-03T22:41:36.036+05:30  INFO 15788 --- [zigato] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 588 ms
+2024-09-03T22:41:36.263+05:30  INFO 15788 --- [zigato] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-03T22:41:36.268+05:30  INFO 15788 --- [zigato] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-03T22:41:36.278+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-03T22:41:36.279+05:30  INFO 15788 --- [zigato] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2024-09-03T22:41:36.293+05:30  INFO 15788 --- [zigato] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50f2a335
+2024-09-03T22:41:36.293+05:30  INFO 15788 --- [zigato] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2024-09-03T22:41:36.460+05:30  INFO 15788 --- [zigato] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-03T22:41:36.631+05:30  INFO 15788 --- [zigato] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-03T22:41:37.877+05:30  WARN 15788 --- [zigato] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-03T22:41:37.932+05:30  INFO 15788 --- [zigato] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-09-03T22:41:38.482+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2024-09-03T22:41:38.585+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2c7e8f76, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@501c253b, org.springframework.security.web.context.SecurityContextHolderFilter@373110e4, org.springframework.security.web.header.HeaderWriterFilter@7a3cd8e2, org.springframework.web.filter.CorsFilter@659514fb, org.springframework.security.web.authentication.logout.LogoutFilter@b3049ac, com.zigato.config.JwtTokenValidator@d45ecde, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4ad24de6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a99bbcc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5598d73f, org.springframework.security.web.session.SessionManagementFilter@5b73bcc6, org.springframework.security.web.access.ExceptionTranslationFilter@4022c547, org.springframework.security.web.access.intercept.AuthorizationFilter@71d1a9f3]
+2024-09-03T22:41:39.148+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-03T22:41:39.186+05:30  INFO 15788 --- [zigato] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-03T22:41:39.198+05:30  INFO 15788 --- [zigato] [restartedMain] com.zigato.ZigatoApplication             : Started ZigatoApplication in 3.775 seconds (process running for 818.736)
+2024-09-03T22:41:39.201+05:30  INFO 15788 --- [zigato] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-03T22:41:41.558+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-03T22:41:41.559+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-03T22:41:41.565+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2024-09-03T22:41:42.820+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-10] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 908 ms
+2024-09-03T22:41:54.648+05:30  WARN 15788 --- [zigato] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'Authorization' for method parameter type String is not present]
+2024-09-03T22:42:12.673+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-7] com.zigato.service.AOPLoggingAspect      : Method User com.zigato.service.UserServiceImpl.findUserByJwtToken(String) returned: User(id=1, fullName=hitesh chandra, email=hitesh@gmail.com, password=$2a$10$o5r8Ekhrt7/UNdKe8.SItOnqky6YFHF5mE6XTt7kvAPRoMbrFboHC, role=ROLE_CUSTOMER, orders=[], favorites=[], adresses=[])
+2024-09-03T22:42:12.684+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-7] com.zigato.service.AOPLoggingAspect      : Method User com.zigato.service.UserServiceImpl.findUserByJwtToken(String) executed in 26 ms
+2024-09-03T22:44:01.038+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-9] com.zigato.service.AOPLoggingAspect      : Method List com.zigato.service.RestaurentServiceImpl.getAllRestaurent() returned: [Restaurent(id=2, owner=User(id=52, fullName=raju chandra, email=raju@gmail.com, password=$2a$10$ieGgmN1LJSOU4dWCiqjrv.0YlB7yxefHKnxTduzAZMKeQljENtY/6, role=ROLE_REST_OWNER, orders=[], favorites=[], adresses=[]), name=The Culinary Experience, description=A fine dining restaurant with an exquisite menu., cuisineType=French, address=Address(id=1, area=Downtown), contactInfo=ContactInfo(email=contact@culinaryexperience.com, mobile=123-456-7890, twitter=@CulinaryExp, instagram=@CulinaryExperience), openingHours=10:00 AM - 10:00 PM, orders=[], images=[http://example.com/image1.jpg, http://example.com/image2.jpg], registrationDate=2024-06-24T10:16:48.871604, open=true, foods=[])]
+2024-09-03T22:44:01.110+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-9] com.zigato.service.AOPLoggingAspect      : Method List com.zigato.service.RestaurentServiceImpl.getAllRestaurent() executed in 216 ms
+2024-09-03T22:55:35.161+05:30  WARN 15788 --- [zigato] [HikariPool-6 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Thread starvation or clock leap detected (housekeeper delta=4m28s578ms256µs400ns).
+2024-09-03T23:02:57.587+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-5] com.zigato.service.AOPLoggingAspect      : Method UserDetails com.zigato.service.CustomUserDetailsService.loadUserByUsername(String) returned: org.springframework.security.core.userdetails.User [Username=hitesh@gmail.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_CUSTOMER]]
+2024-09-03T23:02:57.587+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-5] com.zigato.service.AOPLoggingAspect      : Method UserDetails com.zigato.service.CustomUserDetailsService.loadUserByUsername(String) executed in 10 ms
+2024-09-03T23:03:38.180+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-3] com.zigato.service.AOPLoggingAspect      : Method List com.zigato.service.FoodServiceImpl.searchFood(String) returned: []
+2024-09-03T23:03:38.180+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-3] com.zigato.service.AOPLoggingAspect      : Method List com.zigato.service.FoodServiceImpl.searchFood(String) executed in 28 ms
+2024-09-03T23:04:21.826+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-7] com.zigato.service.AOPLoggingAspect      : Method List com.zigato.service.RestaurentServiceImpl.getAllRestaurent() returned: [Restaurent(id=2, owner=User(id=52, fullName=raju chandra, email=raju@gmail.com, password=$2a$10$ieGgmN1LJSOU4dWCiqjrv.0YlB7yxefHKnxTduzAZMKeQljENtY/6, role=ROLE_REST_OWNER, orders=[], favorites=[], adresses=[]), name=The Culinary Experience, description=A fine dining restaurant with an exquisite menu., cuisineType=French, address=Address(id=1, area=Downtown), contactInfo=ContactInfo(email=contact@culinaryexperience.com, mobile=123-456-7890, twitter=@CulinaryExp, instagram=@CulinaryExperience), openingHours=10:00 AM - 10:00 PM, orders=[], images=[http://example.com/image1.jpg, http://example.com/image2.jpg], registrationDate=2024-06-24T10:16:48.871604, open=true, foods=[])]
+2024-09-03T23:04:21.837+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-7] com.zigato.service.AOPLoggingAspect      : Method List com.zigato.service.RestaurentServiceImpl.getAllRestaurent() executed in 29 ms
+2024-09-03T23:05:19.923+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-9] com.zigato.service.AOPLoggingAspect      : Method List com.zigato.service.FoodServiceImpl.getFoodByRest(long,boolean,boolean,boolean,String) returned: []
+2024-09-03T23:05:19.923+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-9] com.zigato.service.AOPLoggingAspect      : Method List com.zigato.service.FoodServiceImpl.getFoodByRest(long,boolean,boolean,boolean,String) executed in 19 ms
+2024-09-03T23:06:50.748+05:30 ERROR 15788 --- [zigato] [http-nio-8080-exec-1] com.zigato.service.AOPLoggingAspect      : Method CartItem com.zigato.service.CartServiceImpl.updateItemQuantity(long,int) threw exception: invalid cartitem id
+2024-09-03T23:06:50.751+05:30 ERROR 15788 --- [zigato] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: invalid cartitem id] with root cause
+
+java.lang.RuntimeException: invalid cartitem id
+	at com.zigato.service.CartServiceImpl.lambda$1(CartServiceImpl.java:59) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at com.zigato.service.CartServiceImpl.updateItemQuantity(CartServiceImpl.java:59) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.1.8.jar:6.1.8]
+	at com.zigato.service.AOPLoggingAspect.logExecutionTime(AOPLoggingAspect.java:48) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.8.jar:6.1.8]
+	at com.zigato.service.CartServiceImpl$$SpringCGLIB$$0.updateItemQuantity(<generated>) ~[classes/:na]
+	at com.zigato.controller.CartController.updateItemQuantity(CartController.java:37) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at com.zigato.config.JwtTokenValidator.doFilterInternal(JwtTokenValidator.java:55) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.0.jar:6.3.0]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-09-03T23:09:40.327+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-6] com.zigato.service.AOPLoggingAspect      : Method User com.zigato.service.UserServiceImpl.findUserByJwtToken(String) returned: User(id=1, fullName=hitesh chandra, email=hitesh@gmail.com, password=$2a$10$o5r8Ekhrt7/UNdKe8.SItOnqky6YFHF5mE6XTt7kvAPRoMbrFboHC, role=ROLE_CUSTOMER, orders=[], favorites=[], adresses=[])
+2024-09-03T23:09:40.335+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-6] com.zigato.service.AOPLoggingAspect      : Method User com.zigato.service.UserServiceImpl.findUserByJwtToken(String) executed in 14 ms
+2024-09-03T23:09:40.365+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-6] com.zigato.service.AOPLoggingAspect      : Method Cart com.zigato.service.CartServiceImpl.findCartByUser(String) returned: Cart(id=1, customer=User(id=1, fullName=hitesh chandra, email=hitesh@gmail.com, password=$2a$10$o5r8Ekhrt7/UNdKe8.SItOnqky6YFHF5mE6XTt7kvAPRoMbrFboHC, role=ROLE_CUSTOMER, orders=[], favorites=[], adresses=[]), total=0, item=[])
+2024-09-03T23:09:40.371+05:30  INFO 15788 --- [zigato] [http-nio-8080-exec-6] com.zigato.service.AOPLoggingAspect      : Method Cart com.zigato.service.CartServiceImpl.findCartByUser(String) executed in 50 ms
+2024-09-03T23:17:06.128+05:30  INFO 15788 --- [zigato] [RMI TCP Connection(49)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-03T23:17:06.138+05:30  INFO 15788 --- [zigato] [RMI TCP Connection(49)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-03T23:17:06.139+05:30  INFO 15788 --- [zigato] [RMI TCP Connection(49)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2024-09-03T23:17:06.145+05:30  INFO 15788 --- [zigato] [RMI TCP Connection(49)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.

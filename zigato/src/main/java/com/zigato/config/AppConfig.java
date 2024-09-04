@@ -27,6 +27,7 @@ public class AppConfig {
 		http.sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
 				.authorizeHttpRequests(auth -> auth
 
+						.requestMatchers("/swagger-ui*/**","/v3/api-docs/**").permitAll()
 						.requestMatchers("/api/admin/**").hasAnyRole("ADMIN", "REST_OWNER").requestMatchers("/api/**")
 						.authenticated().anyRequest().permitAll())
 

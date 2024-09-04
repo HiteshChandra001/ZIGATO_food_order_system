@@ -8,7 +8,7 @@ public interface CategoryService {
 
 	public Category createCategory(String name, long userid);
 
-	public List<Category> findCategByUserId(long rid);
+	public List<Category> findCategByRestId(long rid);
 
 	public Category findCategById(long id);
 }

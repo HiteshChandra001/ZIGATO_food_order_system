@@ -28,7 +28,7 @@ public class PaymentServiceImpl implements PaymentService {
 				.setCancelUrl("http://localhost:3000/payment/fail")
 				.addLineItem(SessionCreateParams.LineItem.builder().setQuantity(1L)
 						.setPriceData(SessionCreateParams.LineItem.PriceData.builder().setCurrency("usd")
-								.setUnitAmount((long) order.getTotalAmount() * 100)
+								.setUnitAmount((long) order.getTotalAmount())
 								.setProductData(SessionCreateParams.LineItem.PriceData.ProductData.builder()
 										.setName("zigato food").build())
 								.build())

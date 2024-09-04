@@ -28,13 +28,8 @@ public class CategoryServiceImpl implements CategoryService {
 	}
 
 	@Override
-	public List<Category> findCategByUserId(long uid) {
-
-		Restaurent rest = restaurentRepo.findByOwnerId(uid)
-				.orElseThrow(() -> new RuntimeException("invalid userid for restaurent"));
-
-		restaurentRepo.findById(rest.getId()).orElseThrow(() -> new RuntimeException("invalid rid for restaurent"));
-		List<Category> list = categoryRepo.findByRestaurentId(rest.getId());
+	public List<Category> findCategByRestId(long uid) {
+		List<Category> list = categoryRepo.findByRestaurentId(uid);
 		return list;
 	}
 

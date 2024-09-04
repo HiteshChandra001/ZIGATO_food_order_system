@@ -10,11 +10,13 @@ import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString(exclude = {"category", "restaurent"})
 public class IngredientItem {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
@@ -22,6 +24,8 @@ public class IngredientItem {
 	
 	private String name;
 	
+	
+	@JsonIgnore
 	@ManyToOne
 	private IngredientCategory category;
 	
