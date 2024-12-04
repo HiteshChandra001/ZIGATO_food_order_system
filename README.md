@@ -22,7 +22,7 @@ ZIGATO_food_order_system is a comprehensive solution for managing food orders in
 - **Update Item Quantity**: Change the quantity of an item in the cart.
 - **Remove Item from Cart**: Delete an item from the cart.
 - **Clear Cart**: Empty the entire cart.
-- **Get User Cart**: Retrieve the current cart details of the user.
+- **Get User Cart**: Retrieve the current user cart details.
 
 ### Order Management
 - **Create Order**: Place a new order with selected items and delivery address.
@@ -43,8 +43,8 @@ ZIGATO_food_order_system is a comprehensive solution for managing food orders in
 - **Create Food Item**: Add a new food item to a restaurant’s menu.
 - **Update Food Availability**: Modify the availability status of a food item.
 - **Delete Food Item**: Remove a food item from the menu.
-- **Search Food**: Find food items based on name.
-- **Get Food by Restaurant**: List food items available at a specific restaurant.
+- **Search Food**: Find food items by name.
+- **Get Food by Restaurant**: List food items at a specific restaurant.
 
 ### Ingredient Management
 - **Create Ingredient Item**: Add a new ingredient item.
@@ -62,7 +62,7 @@ ZIGATO_food_order_system is a comprehensive solution for managing food orders in
 - **Get User Profile**: Retrieve user profile information using a JWT token.
 
 ### Responses
-- **Successful Operation**: Each endpoint provides a success response with the relevant data.
+- **Successful Operation**: Each endpoint provides a successful response with the relevant data.
 - **Error Handling**: Appropriate error messages are returned for failed operations.
 
 
